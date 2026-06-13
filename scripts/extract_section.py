@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Extract a single book section from a CoReader book PDF."""
+"""Extract a single book section from a CoReader book PDF.
+
+All books live under <project>/books/<BookFolder>/.
+activeBook in .coreader.json is the folder name only (not a path).
+"""
 
 from __future__ import annotations
 
@@ -11,20 +15,54 @@ from pathlib import Path
 import fitz
 
 ROOT = Path(__file__).resolve().parent.parent
+BOOKS_DIR = ROOT / "books"
 CONFIG_FILE = ROOT / ".coreader.json"
 META_DIR = "_meta"
 
 
-def load_active_book_dir(book: str | None) -> Path:
+def normalize_book_name(book: str) -> str:
+    return book.replace("\\", "/").strip("/").removeprefix("books/")
+
+
+def resolve_book_dir(book: str | None) -> Path:
     if book:
-        book_dir = ROOT / book
+        name = normalize_book_name(book)
     else:
         if not CONFIG_FILE.exists():
             raise SystemExit(f"Missing {CONFIG_FILE}. Set activeBook or pass --book.")
         config = json.loads(CONFIG_FILE.read_text(encoding="utf-8"))
-        book_dir = ROOT / config["activeBook"]
+        name = config.get("activeBook")
+        if not name:
+            raise SystemExit(f"Missing activeBook in {CONFIG_FILE}")
+    return BOOKS_DIR / name
+
+
+def list_book_dirs() -> list[Path]:
+    if not BOOKS_DIR.is_dir():
+        return []
+    return sorted(p for p in BOOKS_DIR.iterdir() if p.is_dir())
+
+
+def book_ready(book_dir: Path) -> bool:
+    return (book_dir / META_DIR / "sections.json").exists()
+
+
+def format_available_books() -> str:
+    books = list_book_dirs()
+    if not books:
+        return f"No book folders in {BOOKS_DIR}"
+    lines = ["Available books:"]
+    for book_dir in books:
+        status = "ready" if book_ready(book_dir) else "pdf-only"
+        lines.append(f"  {book_dir.name}  ({status})")
+    return "\n".join(lines)
+
+
+def load_active_book_dir(book: str | None) -> Path:
+    book_dir = resolve_book_dir(book)
     if not book_dir.is_dir():
-        raise SystemExit(f"Book folder not found: {book_dir}")
+        hint = format_available_books()
+        raise SystemExit(f"Book folder not found: {book_dir}\n{hint}")
     return book_dir
 
 
@@ -35,7 +73,11 @@ def meta_dir(book_dir: Path) -> Path:
 def load_sections(book_dir: Path) -> dict:
     sections_file = meta_dir(book_dir) / "sections.json"
     if not sections_file.exists():
-        raise SystemExit(f"Missing {sections_file}")
+        raise SystemExit(
+            f"Missing {sections_file}\n"
+            f"Book {book_dir.name} is not set up yet (pdf-only). "
+            f"Add _meta/sections.json before extracting sections."
+        )
     with sections_file.open(encoding="utf-8") as f:
         return json.load(f)
 
@@ -61,6 +103,19 @@ def extract_pages(pdf_path: Path, start_page: int, end_page: int) -> str:
     return "\n\n".join(chunks)
 
 
+def print_books_list() -> None:
+    active = None
+    if CONFIG_FILE.exists():
+        active = json.loads(CONFIG_FILE.read_text(encoding="utf-8")).get("activeBook")
+    print(f"Books directory: {BOOKS_DIR}")
+    for book_dir in list_book_dirs():
+        status = "ready" if book_ready(book_dir) else "pdf-only"
+        marker = " *" if book_dir.name == active else ""
+        print(f"{book_dir.name:50}  {status}{marker}")
+    if active:
+        print(f"\n* activeBook in .coreader.json")
+
+
 def main() -> None:
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -70,10 +125,18 @@ def main() -> None:
 
     parser = argparse.ArgumentParser(description="Extract one section from a CoReader book PDF.")
     parser.add_argument("section", nargs="?", help="Section id or alias, e.g. foreword, chapter-1")
-    parser.add_argument("--book", help="Book folder name (default: .coreader.json activeBook)")
-    parser.add_argument("--list", action="store_true", help="List available sections")
+    parser.add_argument(
+        "--book",
+        help="Book folder name under books/ (default: .coreader.json activeBook)",
+    )
+    parser.add_argument("--list", action="store_true", help="List sections for the selected book")
+    parser.add_argument("--list-books", action="store_true", help="List all folders under books/")
     parser.add_argument("--output", "-o", type=Path, help="Write extracted text to file")
     args = parser.parse_args()
+
+    if args.list_books:
+        print_books_list()
+        return
 
     book_dir = load_active_book_dir(args.book)
     config = load_sections(book_dir)
@@ -83,6 +146,7 @@ def main() -> None:
 
     if args.list:
         print(f"Book: {book_dir.name} — {config.get('title', config['book'])}")
+        print(f"Path: books/{book_dir.name}/")
         for section in config["sections"]:
             aliases = ", ".join(section["aliases"])
             note = section.get("note", "—")
@@ -91,7 +155,7 @@ def main() -> None:
         return
 
     if not args.section:
-        parser.error("section argument required unless --list is used")
+        parser.error("section argument required unless --list or --list-books is used")
 
     section = resolve_section(config, args.section)
     text = extract_pages(pdf_path, section["start_page"], section["end_page"])
@@ -105,7 +169,6 @@ def main() -> None:
     output = header + text
 
     if args.output:
-        args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(output, encoding="utf-8")
         print(f"Wrote {args.output}", file=sys.stderr)
     else:

@@ -1,6 +1,8 @@
 # 笔记输出模板
 
-笔记写入 `<BookFolder>/<note>.md`（书文件夹根目录，与 PDF 同级）。
+所有书在 **`books/<BookFolder>/`**。笔记写入 `books/<BookFolder>/<note>.md`（与 PDF 同级）。
+
+`<BookFolder>` = `.coreader.json` 里 `activeBook` 的值（不含 `books/` 前缀）。
 
 ## 笔记结构
 
@@ -28,15 +30,6 @@
 
 当章节有 paradox、因果链、术语多义时，在核心总结内用 **易混点** 小标题展开，并在「阅读提示」中再点一次。
 
-示例（Chapter 10 Orchestration）：
-
-```markdown
-**人 vs 系统（易混点）：**
-1. 人本性 unpredictable — …
-2. 企业却必须 predictable — …
-3. 解法：不靠把人变可靠，而靠系统 — …
-```
-
 ## 案例卡片格式
 
 ```markdown
@@ -47,8 +40,6 @@
 - **关联概念**：
 ```
 
-「发生了什么」避免歧义措辞（反例：「店员不用干活」→ 改为「对话被掐断、销售机会流失」）。
-
 ## 阅读提示
 
 至少包含：本章记忆点、与前后章关系、易混概念一句澄清（若有）。
@@ -57,12 +48,13 @@
 
 | 用途 | 路径 |
 |------|------|
-| 编号笔记 | `<BookFolder>/01.Foreword.md` … |
-| 章节映射 | `<BookFolder>/_meta/sections.json` |
-| 阅读进度 | `<BookFolder>/_meta/progress.md` |
-| 种子清单 | `<BookFolder>/_meta/_seeds.md` |
-| 案例索引 | `<BookFolder>/_meta/_cases.md` |
-| 提取原文 | `<BookFolder>/_meta/_raw/<section-id>.txt` |
+| 编号笔记 | `books/<BookFolder>/01.Foreword.md` … |
+| 章节映射 | `books/<BookFolder>/_meta/sections.json` |
+| 本书进度 | `books/<BookFolder>/_meta/progress.md` |
+| 种子清单 | `books/<BookFolder>/_meta/_seeds.md` |
+| 案例索引 | `books/<BookFolder>/_meta/_cases.md` |
+| 提取原文 | `books/<BookFolder>/_meta/_raw/<section-id>.txt` |
+| 书目总览 | 根目录 `progress.md` |
 
 ## _seeds.md / _cases.md 追加格式
 
@@ -72,3 +64,11 @@
 - [<section-id>] **<概念>** — <说明>（状态：…）
 - [<section-id>] **<案例>** — <人物>：<事件> → <观点>
 ```
+
+## 新书 checklist
+
+1. `books/<BookFolder>/` + PDF
+2. `books/<BookFolder>/_meta/sections.json`
+3. 空 `_seeds.md`、`_cases.md`、`progress.md`
+4. 更新 `.coreader.json` → `activeBook`
+5. 更新根目录 `progress.md` 书目表

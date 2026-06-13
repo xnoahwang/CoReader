@@ -11,7 +11,10 @@
 - [x] 07.Chapter-5 (2026-06-12)
 - [x] 08.Chapter-6 (2026-06-12)
 - [x] 09.Chapter-7 (2026-06-12)
+- [x] 10.Chapter-8 (2026-06-12)
+- [x] 11.Chapter-9 (2026-06-12)
+- [x] 12.Chapter-10 (2026-06-12)
 
 ## Next Steps
 
-- `r chapter 8` — The Franchise Prototype
+- `r chapter 11` — Your Business Development Program

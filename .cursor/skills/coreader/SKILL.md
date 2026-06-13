@@ -36,7 +36,7 @@ CoReader/
 |------|------|
 | `r <section>` | 读取并总结指定章节 |
 | `r status` | 显示当前书的已读/未读进度 |
-| `r ask <问题>` | 仅基于已读笔记回答 |
+| `r ask <问题>` | 基于已读笔记 + 原文回答；笔记不清时可更新对应 `<note>.md` |
 | `r list` | 列出当前书可读章节 |
 
 示例：`r foreword`、`r chapter 3`、`r ch7`
@@ -72,15 +72,26 @@ python scripts/extract_section.py <section-id> -o <BookFolder>/_meta/_raw/<secti
 ### Step 3–4: 生成笔记并持久化
 
 1. `<BookFolder>/<note>.md` — 正式笔记
-2. `<BookFolder>/_meta/_seeds.md` — 种子
-3. `<BookFolder>/_meta/_cases.md` — 案例
+2. `<BookFolder>/_meta/_seeds.md` — 种子（**追加/更新，禁止覆盖全书历史**）
+3. `<BookFolder>/_meta/_cases.md` — 案例（追加）
 4. `<BookFolder>/_meta/progress.md` — 进度
+
+笔记格式见 [output-template.md](output-template.md)。
+
+**笔记清晰度（硬性）：**
+
+- **中文优先**：复杂逻辑用完整中文句子，不要为省字写出歧义缩写（反例：「人因 X」可读成「因为有人」或「人本身是 X」）。
+- **逻辑链写全**：作者用「矛盾 → 解法」论证时，逐步列出（前提 / 矛盾 / 解法），不要压缩成一行。
+- **英文术语**：首次出现附中文或括号释义；关键原文可保留引号。
+- **易混点**：因果、否定、指代易混时，用 **易混点** 小标题或阅读提示单独说明。
+- **跨章概念**：注明与已读章节的呼应（如 Ch8 system runs business ↔ Ch10 Orchestration）。
+- **用户追问后**：若用户指出某段看不懂，更新对应 `<note>.md` 并检查同章其他易混表述。
 
 Part 标题页不占序号；`r part 1` → `<BookFolder>/Part-1.md`
 
 ### Step 5: 回复用户
 
-简短确认即可，注明路径如 `TheEMythRevisited/03.Chapter-1.md`。不要重复笔记正文。
+简短确认即可，注明路径如 `TheEMythRevisited/03.Chapter-1.md`。不要重复笔记正文。用户追问看不懂时，先解释，再按需修订笔记。
 
 ## 新增一本书
 

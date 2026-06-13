@@ -1,15 +1,44 @@
 # 种子 / 伏笔清单
 
+- [chapter-10] **BDP 三环** — Innovation / Quantification / Orchestration（状态：已定义）
+- [chapter-10] **Innovation = does new things** — 针对 how 做生意（状态：已定义）
+- [chapter-10] **Best Way skill** — 永求更好（状态：已定义）
+- [chapter-10] **Quantify everything** — 数字即健康图（状态：已定义）
+- [chapter-10] **Orchestration = 消除运营裁量** — 可复制才拥有（状态：已定义）
+- [chapter-10] **If not orchestrated, you don't own it** — 核心句（状态：已定义）
+- [chapter-10] **BDP 动态非一次性** — 持续 I-Q-O（状态：已定义）
+- [chapter-10] **Orchestration 不可孤立** — 须与 I-Q 成整体（状态：已论证）
+- [chapter-10] **Apprentice / Craftsperson / Master** — 三层体验（状态：已定义）
+- [chapter-10] **BDP = more life 隐喻** — 非纯效率（状态：已强调）
+- [chapter-10] **Business Development Program** — Ch11 落地（状态：待展开）
+- [chapter-9] **E-Myth Mastery Program** — 已衔接 BDP（状态：已整合）
+- [chapter-9] **Business is not your life** — 企业与人生分离（状态：已定义）
+- [chapter-9] **Pretend 5,000 franchises** — 思维实验（状态：已定义）
+- [chapter-9] **Franchise game 六条规则** — value/skill/order/docs/predictability/packaging（状态：已定义）
+- [chapter-9] **Expert system vs hire expert** — 系统化交付（状态：已定义）
+- [chapter-9] **Rule of Ordinary People** — 普通人迫建系统（状态：已定义）
+- [chapter-9] **Operations Manual** — How-to-Do-It Guide（状态：已定义，Part III 展开）
+- [chapter-9] **Burnt Child / Burnt Customer** — 不一致驱走顾客（状态：已定义）
+- [chapter-9] **Business as package** — Cheskin 色彩/形状（状态：已定义）
+- [chapter-9] **问题是你，不是企业** — 视角转换（状态：已强调）
+- [chapter-9] **Sarah disidentify + business-as-product** — 叙事高潮（状态：已整合）
+- [chapter-9] **On business, not in it** — 日常核心主题（状态：已展开）
+- [chapter-8] **Franchise Prototype 定义** — 测试假设、derive 系统（状态：已定义）
+- [chapter-8] **The system runs the business; people run the system** — 核心句（状态：已定义）
+- [chapter-8] **系统从建企业中 derive** — 非外置套用（状态：已定义，待 Part III）
+- [chapter-8] **Proprietary Operating System** — 非凡企业核心（状态：已定义）
+- [chapter-8] **Every great business is a franchise** — 广义思维（状态：已定义）
+- [chapter-8] **Turn-Key Operation** — 学系统、转钥匙（状态：已定义，Ch9 深化）
+- [chapter-8] **without you / business controls your life** — 自由目标（状态：已强调，Ch9+ Part III）
 - [chapter-7] **Turn-Key Revolution** — 格式特许经营驱动（状态：已展开）
 - [chapter-7] **Business Format vs Trade Name Franchise** — 系统 vs 品牌（状态：已定义）
 - [chapter-7] **true product = business itself** — 与 Ch6 整合（状态：已整合）
 - [chapter-7] **franchisee 是第一客户** — Does it work?（状态：已定义）
 - [chapter-7] **systems-dependent** — 非 people-dependent（状态：已定义）
-- [chapter-7] **On business, not in it** — Kroc 分水岭（状态：已定义，Ch9 深化）
-- [chapter-7] **Franchise Prototype** — 成功秘密（状态：待 Chapter 8）
+- [chapter-7] **On business, not in it** — Kroc 分水岭（状态：已整合 Ch9）
 - [chapter-7] **Engineer / Model T 思维** — prototype、可复制（状态：已定义）
 - [chapter-7] **McDonald's = integrity** — 承诺一致性（状态：已论证）
 - [chapter-6] **三人格平衡模型** — Turn-Key 提供 balanced model（状态：已衔接）
 - [chapter-6] **Entrepreneurial Model** — business as product（状态：已整合）
-- [introduction] **Business Development Process** — Kroc 将工业革命思维用于 BD（状态：待 Part III 对接）
+- [introduction] **Business Development Process** — 三环已展开（状态：已整合 Ch10）
 - [chapter-3] **depends on you = job** — 系统目标：without you works

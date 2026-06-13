@@ -31,3 +31,12 @@
 - [chapter-7] **Kroc 初访 MacDonald's** — 瑞士表式运营 → money machine → format franchise
 - [chapter-7] **Trade Name vs Business Format** — 品牌授权 vs 整套系统 → true product 是企业
 - [chapter-7] **Sarah/aunt vs Kroc** — craft 之爱同、E vs T 与 magnitude 异 → integrity 模型
+- [chapter-8] **McDonald's Prototype 细节** — 7 分钟薯条、60 秒出餐、pickle 图案 → 可测系统
+- [chapter-8] **Hamburger U** — 学 run system 非 make burgers → Turn-Key
+- [chapter-8] **Sarah 觉醒** — 已有 business，可学 Kroc → without you
+- [chapter-9] **Gerber 理发师** — 三次体验不一致 → Burnt Customer；predictability
+- [chapter-9] **Cheskin 买衬衫** — 颜色心理 → business as package
+- [chapter-9] **Sarah business-as-product** — disidentify；企业当 product 设计 → BDP 过渡
+- [chapter-10] **May I help you?** — 改问候语 +10–16% → Innovation on how
+- [chapter-10] **棕西装 vs 蓝西装** — 六周测试 → Quantify + Orchestrate look
+- [chapter-10] **阿姨厨房三层** — apprentice/craftsperson/master → Orchestration 意义

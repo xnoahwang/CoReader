@@ -10,7 +10,19 @@
 - [chapter-10] **Orchestration 不可孤立** — 须与 I-Q 成整体（状态：已论证）
 - [chapter-10] **Apprentice / Craftsperson / Master** — 三层体验（状态：已定义）
 - [chapter-10] **BDP = more life 隐喻** — 非纯效率（状态：已强调）
-- [chapter-10] **Business Development Program** — Ch11 落地（状态：待展开）
+- [chapter-11] **Business Development Program 七步** — Primary Aim → Systems Strategy（状态：已列出，Ch12–18 待展开）
+- [chapter-11] **BDP Program = Franchise Prototype 载体** — step-by-step 转化（状态：已定义）
+- [chapter-11] **想象买家 without you** — I-Q-O 可演示场景（状态：已强化）
+- [chapter-11] **员工 accountabilities** — 组织设计目标（状态：待 Ch14+）
+- [chapter-12] **Primary Aim 定义** — 人生脚本/标准，先于企业（状态：已定义）
+- [chapter-12] **葬礼磁带想象** — 人生故事怎么讲（状态：已定义）
+- [chapter-12] **go to work on your life** — 与 on business 平行（状态：已定义）
+- [chapter-12] **actively create vs passively drift** — living fully（状态：已定义）
+- [chapter-12] **企业须知道 Primary Aim** — business 服务人生（状态：已定义）
+- [chapter-12] **幕布 / curtain 隐喻** — Comfort Zone、Self、觉醒（状态：已定义）
+- [chapter-12] **Your Strategic Objective** — BDP Step 2（状态：待 Ch13）
+- [chapter-11] **Your Primary Aim** — 已展开（状态：已整合 Ch12）
+- [chapter-10] **Business Development Program** — 已落地为七步（状态：已整合 Ch11）
 - [chapter-9] **E-Myth Mastery Program** — 已衔接 BDP（状态：已整合）
 - [chapter-9] **Business is not your life** — 企业与人生分离（状态：已定义）
 - [chapter-9] **Pretend 5,000 franchises** — 思维实验（状态：已定义）

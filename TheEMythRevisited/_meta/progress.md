@@ -14,7 +14,9 @@
 - [x] 10.Chapter-8 (2026-06-12)
 - [x] 11.Chapter-9 (2026-06-12)
 - [x] 12.Chapter-10 (2026-06-12)
+- [x] 13.Chapter-11 (2026-06-12)
+- [x] 14.Chapter-12 (2026-06-12)
 
 ## Next Steps
 
-- `r chapter 11` — Your Business Development Program
+- `r chapter 13` — Your Strategic Objective

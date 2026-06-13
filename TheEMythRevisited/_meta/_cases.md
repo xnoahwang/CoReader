@@ -40,3 +40,7 @@
 - [chapter-10] **May I help you?** — 改问候语 +10–16% → Innovation on how
 - [chapter-10] **棕西装 vs 蓝西装** — 六周测试 → Quantify + Orchestrate look
 - [chapter-10] **阿姨厨房三层** — apprentice/craftsperson/master → Orchestration 意义
+- [chapter-11] **潜在买家参观** — I-Q-O 演示、员工 accountabilities → BDP Program 完成态 vision
+- [chapter-12] **葬礼自述磁带** — 人生脚本 = Primary Aim
+- [chapter-12] **Sarah「缺的是 Me」** — business 忽略 owner 人生 Aim
+- [chapter-12] **Gerber Silicon Valley 幕布** — 客户也不懂 business → curtain lifted；作者现身

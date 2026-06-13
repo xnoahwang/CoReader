@@ -14,4 +14,4 @@
 
 ## Next Steps
 
-- `reading chapter 8` — The Franchise Prototype
+- `r chapter 8` — The Franchise Prototype

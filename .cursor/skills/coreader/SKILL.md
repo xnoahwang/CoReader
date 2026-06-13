@@ -3,7 +3,7 @@ name: coreader
 description: >-
   Incremental Chinese reading companion for English books in the CoReader
   project. Each book lives in its own folder with numbered notes at the book
-  root and metadata in _meta/. Use when the user says reading, coreader, 读,
+  root and metadata in _meta/. Use when the user says r, coreader, 读,
   阅读, or asks to read/summarize a book section.
 ---
 
@@ -34,10 +34,12 @@ CoReader/
 
 | 命令 | 行为 |
 |------|------|
-| `reading <section>` | 读取并总结指定章节 |
-| `reading status` | 显示当前书的已读/未读进度 |
-| `reading ask <问题>` | 仅基于已读笔记回答 |
-| `reading list` | 列出当前书可读章节 |
+| `r <section>` | 读取并总结指定章节 |
+| `r status` | 显示当前书的已读/未读进度 |
+| `r ask <问题>` | 仅基于已读笔记回答 |
+| `r list` | 列出当前书可读章节 |
+
+示例：`r foreword`、`r chapter 3`、`r ch7`
 
 ## 硬性规则
 
@@ -74,7 +76,7 @@ python scripts/extract_section.py <section-id> -o <BookFolder>/_meta/_raw/<secti
 3. `<BookFolder>/_meta/_cases.md` — 案例
 4. `<BookFolder>/_meta/progress.md` — 进度
 
-Part 标题页不占序号；`reading part 1` → `<BookFolder>/Part-1.md`
+Part 标题页不占序号；`r part 1` → `<BookFolder>/Part-1.md`
 
 ### Step 5: 回复用户
 

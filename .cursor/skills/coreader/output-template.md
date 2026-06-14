@@ -133,6 +133,8 @@
 | 用途 | 路径 |
 |------|------|
 | 编号笔记 | `books/<BookFolder>/01.Foreword.md` … |
+| 全书总结 | `books/<BookFolder>/Summary.md` — CoReader 按需；结构总览 |
+| 个人高光 | `books/<BookFolder>/KeyPoints.md` — **用户自有**；眼前一亮摘录，与分章笔记、Summary 分开 |
 | 章节映射 | `books/<BookFolder>/_meta/sections.json` |
 | 本书进度 | `books/<BookFolder>/_meta/progress.md` |
 | 种子清单 | `books/<BookFolder>/_meta/_seeds.md` |

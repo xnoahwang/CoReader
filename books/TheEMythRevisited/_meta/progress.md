@@ -28,4 +28,5 @@
 
 ## Next Steps
 
-- **全书读完** — 可回顾 `note.md`、BDP 七步，或 `r` 下一本书
+- **全书读完** — 可回顾 `KeyPoints.md`、`Summary.md`、BDP 七步，或 `r` 下一本书
+- **产出分层** — 分章笔记（CoReader）→ `Summary.md`（大总结）→ `KeyPoints.md`（用户高光）

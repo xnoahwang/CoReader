@@ -3,7 +3,8 @@ name: coreader
 description: >-
   Incremental Chinese reading companion for English books in the CoReader
   project. All books live under books/<BookFolder>/ with numbered notes at
-  the book root and metadata in _meta/. Use when the user says r, coreader,
+  the book root and metadata in _meta/. Optional Summary.md on completion;
+  KeyPoints.md is user-curated. Use when the user says r, coreader,
   读, 阅读, or asks to read/summarize a book section.
 ---
 
@@ -23,8 +24,10 @@ CoReader/
 └── books/
     └── <BookFolder>/           # 文件夹名 = activeBook 的值
         ├── *.pdf               # 原书 PDF
-        ├── 01.Foreword.md      # 编号笔记（与 PDF 同级，方便阅读）
+        ├── 01.Foreword.md      # 编号章节笔记（CoReader 产出）
         ├── 02.Introduction.md
+        ├── Summary.md          # 全书大总结（读完或用户要求时）
+        ├── KeyPoints.md        # 个人高光摘录（用户自行整理，CoReader 不自动写）
         └── _meta/
             ├── sections.json   # 章节映射（必读，否则 pdf-only）
             ├── progress.md     # 本书阅读进度
@@ -42,6 +45,14 @@ CoReader/
 | `r list` | 列出当前书可读章节 |
 | `r books` | 列出 `books/` 下所有书（ready / pdf-only） |
 | `r ask <问题>` | 基于已读笔记 + 原文用 **中文** 回答；笔记不清时可更新对应笔记 |
+
+**读完一本书（三层产出，分工不同）：**
+
+| 层 | 文件 | 谁写 | 何时 |
+|----|------|------|------|
+| 分章笔记 | `01.*.md` … | CoReader | 每次 `r <section>` |
+| 大总结 | `Summary.md` | CoReader | 用户要求「总结全书」或读完要总览时 |
+| 个人高光 | `KeyPoints.md` | **用户** | 读完后自行摘录眼前一亮的内容；**默认不由 CoReader 创建或追加** |
 
 示例：`r foreword`、`r chapter 3`、`r ch7`、`r books`
 
@@ -104,6 +115,16 @@ Part 标题页不占序号；`r part 1` → `books/<BookFolder>/Part-1.md`
 ### Step 5: 回复用户
 
 简短确认即可，路径带 `books/` 前缀，如 `books/TheEMythRevisited/03.Chapter-1.md`。**不要重复笔记正文。** 聊天里解释时也用中文为主，避免散装英语。
+
+### 全书总结（可选，非每章必做）
+
+用户明确要求「全书总结 / 做成 Summary」时：
+
+1. 基于已读分章笔记 + `_seeds.md` 写 `books/<BookFolder>/Summary.md`
+2. 更新 `_meta/progress.md` 与根目录 `progress.md` 若需标注「已有 Summary」
+3. **不要** 顺带生成或改写 `KeyPoints.md` —— 那是用户私人高光本
+
+`KeyPoints.md`：仅当用户 **明确要求** 协助整理 KeyPoints 时才动；否则只引用路径，不代写。
 
 ## 新增一本书
 

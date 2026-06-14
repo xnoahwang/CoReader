@@ -17,7 +17,9 @@ CoReader/
 └── books/                  # ← 所有书放这里
     └── <BookFolder>/
         ├── *.pdf
-        ├── 01.Foreword.md  # 编号笔记
+        ├── 01.Foreword.md   # 分章笔记（CoReader）
+        ├── Summary.md       # 全书大总结（按需）
+        ├── KeyPoints.md     # 个人高光（用户整理）
         └── _meta/
             ├── sections.json
             ├── progress.md
@@ -40,9 +42,18 @@ CoReader/
 
 列出书目：`python scripts/extract_section.py --list-books`
 
+## 阅读产出（每本书）
+
+| 文件 | 用途 |
+|------|------|
+| `01.*.md` … | CoReader 分章笔记（`r chapter N`） |
+| `Summary.md` | 全书大总结（读完或用户要求时由 CoReader 写） |
+| `KeyPoints.md` | 个人眼前一亮摘录（**用户自行整理**） |
+| `_meta/` | 进度、种子、案例、原文 |
+
 ## Handoff
 
 - **加新书**：PDF 放进 `books/<新文件夹>/`，建好 `_meta/sections.json` 后再 `r`
 - **切换当前书**：改 `.coreader.json` 的 `activeBook` 为 `books/` 下文件夹名
 - **读章节**：`r chapter N`（针对 activeBook）
-- **The E-Myth Revisited**：全书读完（2026-06-13，含后记）
+- **The E-Myth Revisited**：全书读完（2026-06-13）；有 `Summary.md`、`KeyPoints.md`

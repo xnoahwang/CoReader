@@ -46,3 +46,20 @@
 - [chapter-12] **Gerber 硅谷幕布** — 客户也不懂生意 → 幕布升起；作者现身
 - [chapter-13] **Revlon / Chanel** — 商品 vs 产品；卖希望 / 卖幻想
 - [chapter-13] **Sarah 野马与战略目标** — 技工沉迷压抑企业家天性；7 年 4 店、关怀为产品
+- [chapter-14] **Widget Makers 轮流灾难** — 人人干活无人问责 → 要架构图
+- [chapter-14] **Murray 销售手册再招人** — I-Q-O → 手册 → 学徒 → 升经理
+- [chapter-14] **Sarah 填格签字** — 七年后架构图；须像员工一样工作
+- [chapter-15] **Venetia 火柴薄荷咖啡报纸** — 首访问偏好 → 自动；有人听见我
+- [chapter-15] **29 岁经理与 OM** — 厨工背景；清单+房间图+签字
+- [chapter-16] **Venetia 老板第一天** — 工作映照内在；道场；理念三部分
+- [chapter-16] **Sarah 关怀学校** — Let thy spirit run free；It=Caring
+- [chapter-16] **系统四层 hierarchy** — 做/招/管/变
+- [chapter-17] **IBM 蓝 vs 橙色西装** — 感知即现实
+- [chapter-17] **Sarah 问卷与交易区** — 免费派换数据
+- [chapter-17] **营销三连** — 承诺/成交/兑现；COO 居中
+- [chapter-18] **防污环** — 硬系统；冲突+意志
+- [chapter-18] **Walter Mitty 三基准销售** — 打开非关闭
+- [chapter-18] **Sarah 软系统顿悟** — 话术与视觉一体
+- [chapter-19] **Keep the curtain up** — 书信收束；舒适区
+- [epilogue] **道场=小企业** — Joe Hyams；即时反馈
+- [epilogue] **创业带混沌** — 梦想变最糟工作

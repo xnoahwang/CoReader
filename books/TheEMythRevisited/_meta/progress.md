@@ -17,7 +17,15 @@
 - [x] 13.Chapter-11 (2026-06-12)
 - [x] 14.Chapter-12 (2026-06-12)
 - [x] 15.Chapter-13 (2026-06-13)
+- [x] 16.Chapter-14 (2026-06-13)
+- [x] 17.Chapter-15 (2026-06-13)
+- [x] 18.Chapter-16 (2026-06-13)
+- [x] 19.Chapter-17 (2026-06-13)
+- [x] 20.Chapter-18 (2026-06-13)
+- [x] 21.Chapter-19 (2026-06-13)
+- [x] 22.Epilogue (2026-06-13)
+- [x] 23.Afterword (2026-06-13)
 
 ## Next Steps
 
-- `r chapter 14` — Your Organizational Strategy
+- **全书读完** — 可回顾 `note.md`、BDP 七步，或 `r` 下一本书

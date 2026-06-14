@@ -16,7 +16,8 @@
 - [x] 12.Chapter-10 (2026-06-12)
 - [x] 13.Chapter-11 (2026-06-12)
 - [x] 14.Chapter-12 (2026-06-12)
+- [x] 15.Chapter-13 (2026-06-13)
 
 ## Next Steps
 
-- `r chapter 13` — Your Strategic Objective
+- `r chapter 14` — Your Organizational Strategy

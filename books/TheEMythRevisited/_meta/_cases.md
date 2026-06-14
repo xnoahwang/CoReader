@@ -41,6 +41,8 @@
 - [chapter-10] **棕西装 vs 蓝西装** — 六周测试 → Quantify + Orchestrate look
 - [chapter-10] **阿姨厨房三层** — apprentice/craftsperson/master → Orchestration 意义
 - [chapter-11] **潜在买家参观** — I-Q-O 演示、员工 accountabilities → BDP Program 完成态 vision
-- [chapter-12] **葬礼自述磁带** — 人生脚本 = Primary Aim
-- [chapter-12] **Sarah「缺的是 Me」** — business 忽略 owner 人生 Aim
-- [chapter-12] **Gerber Silicon Valley 幕布** — 客户也不懂 business → curtain lifted；作者现身
+- [chapter-12] **葬礼自述磁带** — 人生脚本 = 首要目标
+- [chapter-12] **Sarah「缺的是我自己」** — 企业忽略店主人生目标
+- [chapter-12] **Gerber 硅谷幕布** — 客户也不懂生意 → 幕布升起；作者现身
+- [chapter-13] **Revlon / Chanel** — 商品 vs 产品；卖希望 / 卖幻想
+- [chapter-13] **Sarah 野马与战略目标** — 技工沉迷压抑企业家天性；7 年 4 店、关怀为产品

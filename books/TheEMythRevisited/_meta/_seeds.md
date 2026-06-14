@@ -14,13 +14,20 @@
 - [chapter-11] **BDP Program = Franchise Prototype 载体** — step-by-step 转化（状态：已定义）
 - [chapter-11] **想象买家 without you** — I-Q-O 可演示场景（状态：已强化）
 - [chapter-11] **员工 accountabilities** — 组织设计目标（状态：待 Ch14+）
-- [chapter-12] **Primary Aim 定义** — 人生脚本/标准，先于企业（状态：已定义）
+- [chapter-12] **首要目标定义** — 人生脚本/标准，先于企业（状态：已定义）
 - [chapter-12] **葬礼磁带想象** — 人生故事怎么讲（状态：已定义）
-- [chapter-12] **go to work on your life** — 与 on business 平行（状态：已定义）
-- [chapter-12] **actively create vs passively drift** — living fully（状态：已定义）
-- [chapter-12] **企业须知道 Primary Aim** — business 服务人生（状态：已定义）
-- [chapter-12] **幕布 / curtain 隐喻** — Comfort Zone、Self、觉醒（状态：已定义）
-- [chapter-12] **Your Strategic Objective** — BDP Step 2（状态：待 Ch13）
+- [chapter-12] **经营人生 vs 活在人生里** — 与经营企业平行（状态：已定义）
+- [chapter-12] **主动创造 vs 被动漂流** — 充分活着 vs 仅仅存在（状态：已定义）
+- [chapter-12] **企业须知道首要目标** — 企业服务人生（状态：已定义）
+- [chapter-12] **幕布隐喻** — 舒适区、自我、觉醒（状态：已定义）
+- [chapter-13] **战略目标定义** — 标准清单服务首要目标（状态：已定义）
+- [chapter-13] **商品 vs 产品** — 卖感受不卖物品（状态：已定义）
+- [chapter-13] **人口统计 / 心理统计** — 谁买 / 为何买（状态：已定义）
+- [chapter-13] **值得去追的机会** — 财务上站得住才做（状态：已定义）
+- [chapter-13] **创办企业的终极目的：卖掉** — 交钥匙后出售（状态：已定义）
+- [chapter-13] **Sarah：关怀是真正的产品** — 分寸感（状态：已定义）
+- [chapter-13] **组织战略** — 七步第三步（状态：待第十四章）
+- [chapter-12] **Your Strategic Objective** — 已展开（状态：已整合 Ch13）
 - [chapter-11] **Your Primary Aim** — 已展开（状态：已整合 Ch12）
 - [chapter-10] **Business Development Program** — 已落地为七步（状态：已整合 Ch11）
 - [chapter-9] **E-Myth Mastery Program** — 已衔接 BDP（状态：已整合）

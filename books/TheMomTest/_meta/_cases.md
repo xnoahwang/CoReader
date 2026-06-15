@@ -1,0 +1,21 @@
+- [introduction] **Habit 社交广告** — 三年聊法全错
+- [introduction] **推土机 vs 牙刷** — 考古隐喻
+- [chapter-1] **iPad 食谱失败/通过** — 与妈妈两次对话
+- [chapter-1] **消息工具→Dropbox** — 你何必 bother
+- [chapter-1] **肯定付钱却从未 Google** — 抽象热情
+- [chapter-2] **MTV 分析报表** — 客户要邮件非 dashboard
+- [chapter-2] **千万亏损空话** — 肯定会买陷阱
+- [chapter-2] **忠诚卡排队** — pitch vs 锚定
+- [chapter-3] **没见律师亏50万** — 回避重要问题
+- [chapter-3] **健身App过早变焦** — 假验证
+- [chapter-3] **Rob博客爱好** — 别变焦营销
+- [chapter-3] **穷校预算大象** — 多失败点
+- [chapter-4] **办公室经理讨债** — 啤酒闲聊
+- [chapter-4] **投资人便利贴墙** — 5分钟证伪
+- [chapter-5] **三脚架原型被买** — 最强承诺
+- [chapter-5] **早期传道者** — 人生最糟部分愿付钱
+- [chapter-6] **订婚派对演讲者** — 偶然+承诺
+- [chapter-6] **三校知识交流** — 主持即信用
+- [chapter-7] **调味粉健康店** — 切片+货架承诺
+- [chapter-7] **学生漏勺** — 20种客户混聊
+- [conclusion] **私教直接打警察** — 20分钟约试课

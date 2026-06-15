@@ -1,0 +1,21 @@
+{
+  "id": "TheMomTest",
+  "title": "The Mom Test",
+  "author": "Rob Fitzpatrick",
+  "book": "The Mom Test.pdf",
+  "sections": [
+    { "id": "introduction", "note": "01.Introduction", "aliases": ["introduction", "intro", "引言"], "title": "Introduction", "start_page": 2, "end_page": 6 },
+    { "id": "chapter-1", "note": "02.Chapter-1", "aliases": ["chapter-1", "chapter 1", "ch1", "ch 1", "第1章", "the mom test"], "title": "Chapter 1: The Mom Test", "start_page": 7, "end_page": 22 },
+    { "id": "chapter-2", "note": "03.Chapter-2", "aliases": ["chapter-2", "chapter 2", "ch2", "ch 2", "第2章"], "title": "Chapter 2: Avoiding Bad Data", "start_page": 23, "end_page": 39 },
+    { "id": "chapter-3", "note": "04.Chapter-3", "aliases": ["chapter-3", "chapter 3", "ch3", "ch 3", "第3章"], "title": "Chapter 3: Asking Important Questions", "start_page": 40, "end_page": 54 },
+    { "id": "chapter-4", "note": "05.Chapter-4", "aliases": ["chapter-4", "chapter 4", "ch4", "ch 4", "第4章"], "title": "Chapter 4: Keeping It Casual", "start_page": 55, "end_page": 61 },
+    { "id": "chapter-5", "note": "06.Chapter-5", "aliases": ["chapter-5", "chapter 5", "ch5", "ch 5", "第5章"], "title": "Chapter 5: Commitment and Advancement", "start_page": 62, "end_page": 73 },
+    { "id": "chapter-6", "note": "07.Chapter-6", "aliases": ["chapter-6", "chapter 6", "ch6", "ch 6", "第6章"], "title": "Chapter 6: Finding Conversations", "start_page": 74, "end_page": 88 },
+    { "id": "chapter-7", "note": "08.Chapter-7", "aliases": ["chapter-7", "chapter 7", "ch7", "ch 7", "第7章"], "title": "Chapter 7: Choosing Your Customers", "start_page": 89, "end_page": 97 },
+    { "id": "chapter-8", "note": "09.Chapter-8", "aliases": ["chapter-8", "chapter 8", "ch8", "ch 8", "第8章"], "title": "Chapter 8: Running the Process", "start_page": 98, "end_page": 110 },
+    { "id": "conclusion", "note": "10.Conclusion", "aliases": ["conclusion", "cheatsheet", "结论"], "title": "Conclusion and Cheatsheet", "start_page": 111, "end_page": 118 },
+    { "id": "thanks", "note": "11.Thanks", "aliases": ["thanks", "致谢"], "title": "Thanks!", "start_page": 119, "end_page": 119 },
+    { "id": "acknowledgements", "note": "12.Acknowledgements", "aliases": ["acknowledgements", "致谢名单"], "title": "Acknowledgements", "start_page": 120, "end_page": 120 }
+  ],
+  "skip": ["cover", "contents", "title page"]
+}

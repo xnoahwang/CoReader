@@ -2,9 +2,9 @@
 
 ## Active Book
 
-**TheEMythRevisited** — *The E-Myth Revisited* (Gerber)
+**TheMomTest** — *The Mom Test* (Rob Fitzpatrick)
 
-详见 `books/TheEMythRevisited/_meta/progress.md`
+详见 `books/TheMomTest/_meta/progress.md`
 
 ## 项目结构
 
@@ -32,6 +32,7 @@ CoReader/
 
 | 文件夹 (`activeBook`) | 书名 | 状态 |
 |------------------------|------|------|
+| `TheMomTest` | The Mom Test | **已读完** · 有 `Summary.md` |
 | `TheEMythRevisited` | The E-Myth Revisited | **已读完** |
 | `12 rules for life an antidote to chaos` | 12 Rules for Life | pdf-only |
 | `Beyond order 12 more rules for life` | Beyond Order | pdf-only |
@@ -56,4 +57,5 @@ CoReader/
 - **加新书**：PDF 放进 `books/<新文件夹>/`，建好 `_meta/sections.json` 后再 `r`
 - **切换当前书**：改 `.coreader.json` 的 `activeBook` 为 `books/` 下文件夹名
 - **读章节**：`r chapter N`（针对 activeBook）
+- **The Mom Test**：全书读完（2026-06-14）；有 `Summary.md`、`KeyPoints.md`
 - **The E-Myth Revisited**：全书读完（2026-06-13）；有 `Summary.md`、`KeyPoints.md`

@@ -1,0 +1,4 @@
+# books/ 下仅跟踪已读完并维护笔记的书；其余 PDF 留在本地
+books/*
+!books/TheEMythRevisited/
+!books/TheMomTest/

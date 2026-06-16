@@ -6,7 +6,7 @@
 
 **风格标杆：** 以本书 `_meta/reading-profile.md` 为准（若存在）。无 profile 时默认 `books/TheEMythRevisited/15.Chapter-13.md`。
 
-**已有 profile 的书：** `TheEMythRevisited`、`TheMomTest`、`MAPS OF MEANING THE ARCHITECTURE OF BELIEF` — 读笔记前加载对应 profile。
+**已有 profile 的书：** `TheEMythRevisited`、`TheMomTest` — 读笔记前加载对应 profile。
 
 ## 笔记结构
 
@@ -19,9 +19,11 @@
 > 阅读日期：<YYYY-MM-DD>
 
 ## 核心总结
-## 种子 / 伏笔          # MoM 等可改为「种子 / 概念簇」
-## 案例卡片              # MoM 等可改为「例证索引」
+## 种子 / 伏笔          # 理论书 profile 可改为「种子 / 概念簇」
+## 案例卡片              # 理论书 profile 可改为「例证索引」
 ## 与已读部分的呼应
+
+**仅本书内**已读章节（禁止跨书对照表）。首章可写「（本书首读）」或只列本书前文。
 ## 阅读提示
 ```
 

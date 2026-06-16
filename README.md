@@ -33,11 +33,12 @@ CoReader/
         ├── Summary-en.md       # Full-book summary (r en summary)
         ├── KeyPoints.md        # Personal highlights (user-owned)
         └── _meta/
-            ├── sections.json   # Section → PDF page mapping (required)
-            ├── progress.md     # Per-book reading progress
-            ├── _seeds.md       # Running themes / open threads
-            ├── _cases.md       # Story & example index
-            └── _raw/           # Extracted section text
+            ├── sections.json       # Section → PDF page mapping (required)
+            ├── reading-profile.md  # Per-book note style & structure (recommended)
+            ├── progress.md         # Per-book reading progress
+            ├── _seeds.md           # Running themes / open threads
+            ├── _cases.md           # Story & example index
+            └── _raw/               # Extracted section text
 ```
 
 ## Three layers of output
@@ -134,7 +135,7 @@ These folders are tracked in git (notes + metadata; PDFs included where present)
 | [`books/TheEMythRevisited/`](books/TheEMythRevisited/) | *The E-Myth Revisited* (Michael E. Gerber) | Complete · [Summary](books/TheEMythRevisited/Summary.md) |
 | [`books/TheMomTest/`](books/TheMomTest/) | *The Mom Test* (Rob Fitzpatrick) | Complete · [Summary](books/TheMomTest/Summary.md) |
 
-Other books may exist locally under `books/` but are **ignored by git** (see `.gitignore`). Add your own PDFs locally; only promote folders to the repo when you want to share notes.
+Only these two folders are tracked in git (`books/*` with exceptions in `.gitignore`). PDFs and notes stay in-repo for personal study; respect copyright if you fork or publish.
 
 ## Cursor agent skill
 
@@ -143,7 +144,7 @@ Agent behavior is defined in:
 - [`.cursor/skills/coreader/SKILL.md`](.cursor/skills/coreader/SKILL.md) — workflow and rules  
 - [`.cursor/skills/coreader/output-template.md`](.cursor/skills/coreader/output-template.md) — note structure and style  
 
-Style reference for chapter notes: `books/TheEMythRevisited/15.Chapter-13.md`.
+**Style reference:** per-book `_meta/reading-profile.md` when present; default chapter example: `books/TheEMythRevisited/15.Chapter-13.md`.
 
 ## Note style (short)
 

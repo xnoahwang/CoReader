@@ -2,9 +2,9 @@
 
 ## Active Book
 
-**MAPS OF MEANING THE ARCHITECTURE OF BELIEF** — *Maps of Meaning* (Jordan B. Peterson)
+**TheEMythRevisited** — *The E-Myth Revisited* (Michael E. Gerber)
 
-详见 `books/MAPS OF MEANING THE ARCHITECTURE OF BELIEF/_meta/progress.md`
+详见 `books/TheEMythRevisited/_meta/progress.md`
 
 ## 项目结构
 
@@ -33,13 +33,8 @@ CoReader/
 
 | 文件夹 (`activeBook`) | 书名 | 状态 |
 |------------------------|------|------|
-| `MAPS OF MEANING THE ARCHITECTURE OF BELIEF` | Maps of Meaning | 进行中 · Ch2 已读 |
-| `TheMomTest` | The Mom Test | **已读完** · 有 `Summary.md` |
-| `TheEMythRevisited` | The E-Myth Revisited | **已读完** |
-| `12 rules for life an antidote to chaos` | 12 Rules for Life | pdf-only |
-| `Beyond order 12 more rules for life` | Beyond Order | pdf-only |
-| `MAPS OF MEANING THE ARCHITECTURE OF BELIEF` | Maps of Meaning | pdf-only |
-| `We Who Wrestle with God Perceptions of the Divine` | We Who Wrestle with God | pdf-only |
+| `TheEMythRevisited` | The E-Myth Revisited | **已读完** · 有 `Summary.md`、`KeyPoints.md` |
+| `TheMomTest` | The Mom Test | **已读完** · 有 `Summary.md`、`KeyPoints.md` |
 
 路径均为 `books/<文件夹>/`。
 
@@ -56,9 +51,8 @@ CoReader/
 
 ## Handoff
 
-- **加新书**：PDF 放进 `books/<新文件夹>/`，建好 `_meta/sections.json` 与 `reading-profile.md` 后再 `r`
-- **切换当前书**：改 `.coreader.json` 的 `activeBook` 为 `books/` 下文件夹名
+- **切换当前书**：改 `.coreader.json` 的 `activeBook` 为 `TheEMythRevisited` 或 `TheMomTest`
 - **读章节**：`r chapter N`（针对 activeBook）
-- **Maps of Meaning**：`r chapter 3` — Apprenticeship and Enculturation
-- **The Mom Test**：全书读完（2026-06-14）；有 `Summary.md`、`KeyPoints.md`
-- **The E-Myth Revisited**：全书读完（2026-06-13）；有 `Summary.md`、`KeyPoints.md`
+- **The E-Myth Revisited**：全书读完（2026-06-13）
+- **The Mom Test**：全书读完（2026-06-14）
+- **加新书**：PDF 放进 `books/<新文件夹>/`，建好 `_meta/sections.json` 与 `reading-profile.md` 后再 `r`

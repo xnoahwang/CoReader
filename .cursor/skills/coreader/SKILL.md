@@ -102,6 +102,14 @@ Part：`r en part 1` → `Part-1-en.md`（若该书有 Part 笔记）
 - **不存在**则使用 [output-template.md](output-template.md) 默认约定（商业叙事类）
 - profile 与通用模板冲突时：**profile 优先**（仍遵守「中文为主、禁止散装英语」等硬性语言规则）
 
+**书本隔离（硬性）：**
+
+- 每次 `r` / `r en` / `r ask` **只读当前 `activeBook`** 的 profile、`_seeds.md`、`_cases.md`、本书笔记与本书 PDF；**不**为写笔记去读其他书文件夹。
+- **「与已读部分的呼应」** 只写 **本书内** 已读章节；禁止与其他 CoReader 书目的跨书对照表。
+- 原文若提到作者另一本书，可在正文 **一句带过**；**不单设**跨书专节。
+- 用户明确说「对照某书」时，才可临时跨书；默认禁止。
+- `_seeds.md` / `_cases.md` / `_glossary.md` **永不跨书合并**。
+
 ### Step 1: 解析 section
 
 ```bash
@@ -144,7 +152,7 @@ python scripts/extract_section.py <section-id> -o books/<BookFolder>/_meta/_raw/
 - **术语**：首次 `中文（English）`，同章后文用中文；金句/人名可保留英文并解释。
 - **排版**：长句拆行；`###` 分节；对照用表格；关键区分用引用标题 + 表格局部正文。
 - **故事/隐喻**（Sarah、野马等）：独立小节 + 必要时「用中文说清楚就是」引用块。
-- **逻辑链**、**易混点**、**跨章呼应**：写全、写清，不压缩成一行。
+- **逻辑链**、**易混点**、**本书内跨章呼应**：写全、写清，不压缩成一行。
 - **用户追问或微调后**：按用户确认的风格写后续章节；修订时通查同章类似表述。
 - **_seeds.md / _cases.md**：追加条目，中文为主，禁止覆盖全书历史。
 - **英文笔记（`r en`）**：完整英文句；结构与中文平行；`_seeds-en.md` / `_cases-en.md` 追加、禁止覆盖。
@@ -172,7 +180,7 @@ Part 标题页不占序号；`r part 1` → `Part-1.md`；`r en part 1` → `Par
 3. 新建 `books/<BookFolder>/_meta/`、`_meta/_raw/`
 4. 编写 `_meta/sections.json`（见已有书 `books/TheEMythRevisited/_meta/sections.json`）
 5. 新建空 `_meta/_seeds.md`、`_cases.md`、`_meta/progress.md`（英文笔记产生时再建 `_seeds-en.md`、`_cases-en.md`）
-6. **建议** 新建 `_meta/reading-profile.md`（本书怎么读、怎么记；见已有三本书范例）
+6. **建议** 新建 `_meta/reading-profile.md`（本书怎么读、怎么记；见 `TheEMythRevisited`、`TheMomTest` 范例）
 7. 更新 `.coreader.json` 的 `activeBook` 为 `<BookFolder>`
 8. 更新根目录 `progress.md` 书目表
 

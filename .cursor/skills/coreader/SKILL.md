@@ -38,6 +38,7 @@ CoReader/
             ├── _seeds-en.md    # 英文种子（r en 时追加）
             ├── _cases.md
             ├── _cases-en.md    # 英文案例索引（r en 时追加）
+            ├── reading-profile.md   # 本书解读方式（体裁、结构、拆分规则）
             └── _raw/           # 提取原文
 ```
 
@@ -93,6 +94,14 @@ Part：`r en part 1` → `Part-1-en.md`（若该书有 Part 笔记）
 
 书目录 = `books/<activeBook>/`
 
+### Step 0.5: 加载本书解读配置（若有）
+
+路径：`books/<activeBook>/_meta/reading-profile.md`
+
+- **存在则必读**，笔记结构、阅读单位、侧重、术语与风格标杆 **以 profile 为准**
+- **不存在**则使用 [output-template.md](output-template.md) 默认约定（商业叙事类）
+- profile 与通用模板冲突时：**profile 优先**（仍遵守「中文为主、禁止散装英语」等硬性语言规则）
+
 ### Step 1: 解析 section
 
 ```bash
@@ -127,7 +136,7 @@ python scripts/extract_section.py <section-id> -o books/<BookFolder>/_meta/_raw/
 3. `_meta/_cases-en.md` — 英文案例（追加）
 4. `_meta/progress.md` — 在 `## English completed`（无则新建）下记录 `<note>-en`
 
-笔记格式见 [output-template.md](output-template.md)。**中文风格标杆：** `books/TheEMythRevisited/15.Chapter-13.md`。**英文**见 output-template 的「English notes」节。
+笔记格式见 [output-template.md](output-template.md)。**风格标杆：** 先读本书 `_meta/reading-profile.md` 中的「风格标杆」；无 profile 时默认 `books/TheEMythRevisited/15.Chapter-13.md`。**英文**见 output-template 的「English notes」节。
 
 **笔记写法（硬性，与 output-template 一致）：**
 
@@ -163,8 +172,9 @@ Part 标题页不占序号；`r part 1` → `Part-1.md`；`r en part 1` → `Par
 3. 新建 `books/<BookFolder>/_meta/`、`_meta/_raw/`
 4. 编写 `_meta/sections.json`（见已有书 `books/TheEMythRevisited/_meta/sections.json`）
 5. 新建空 `_meta/_seeds.md`、`_cases.md`、`_meta/progress.md`（英文笔记产生时再建 `_seeds-en.md`、`_cases-en.md`）
-6. 更新 `.coreader.json` 的 `activeBook` 为 `<BookFolder>`
-7. 更新根目录 `progress.md` 书目表
+6. **建议** 新建 `_meta/reading-profile.md`（本书怎么读、怎么记；见已有三本书范例）
+7. 更新 `.coreader.json` 的 `activeBook` 为 `<BookFolder>`
+8. 更新根目录 `progress.md` 书目表
 
 仅放 PDF、尚未建 `sections.json` 的书为 **pdf-only**，不能 `r` 读章节，直到完成 setup。
 

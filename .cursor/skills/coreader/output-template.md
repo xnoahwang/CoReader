@@ -4,9 +4,13 @@
 
 `<BookFolder>` = `.coreader.json` 里 `activeBook` 的值（不含 `books/` 前缀）。
 
-**风格标杆：** `books/TheEMythRevisited/15.Chapter-13.md` — 之后各章笔记均按此风格写。
+**风格标杆：** 以本书 `_meta/reading-profile.md` 为准（若存在）。无 profile 时默认 `books/TheEMythRevisited/15.Chapter-13.md`。
+
+**已有 profile 的书：** `TheEMythRevisited`、`TheMomTest`、`MAPS OF MEANING THE ARCHITECTURE OF BELIEF` — 读笔记前加载对应 profile。
 
 ## 笔记结构
+
+**默认**（商业叙事等）；理论/方法论书以 `reading-profile.md` 中的结构为准。
 
 ```markdown
 # <章节中文标题>
@@ -15,8 +19,8 @@
 > 阅读日期：<YYYY-MM-DD>
 
 ## 核心总结
-## 种子 / 伏笔
-## 案例卡片
+## 种子 / 伏笔          # MoM 等可改为「种子 / 概念簇」
+## 案例卡片              # MoM 等可改为「例证索引」
 ## 与已读部分的呼应
 ## 阅读提示
 ```
@@ -160,8 +164,9 @@
 1. `books/<BookFolder>/` + PDF
 2. `books/<BookFolder>/_meta/sections.json`
 3. 空 `_seeds.md`、`_cases.md`、`progress.md`
-4. 更新 `.coreader.json` → `activeBook`
-5. 更新根目录 `progress.md` 书目表
+4. `_meta/reading-profile.md`（建议；定义本书解读方式）
+5. 更新 `.coreader.json` → `activeBook`
+6. 更新根目录 `progress.md` 书目表
 
 ---
 

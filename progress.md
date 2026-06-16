@@ -25,6 +25,7 @@ CoReader/
             ├── progress.md
             ├── _seeds.md
             ├── _cases.md
+            ├── reading-profile.md   # 本书解读方式（体裁、结构、拆分规则）
             └── _raw/
 ```
 
@@ -32,7 +33,7 @@ CoReader/
 
 | 文件夹 (`activeBook`) | 书名 | 状态 |
 |------------------------|------|------|
-| `MAPS OF MEANING THE ARCHITECTURE OF BELIEF` | Maps of Meaning | 进行中 · Preface 已读 |
+| `MAPS OF MEANING THE ARCHITECTURE OF BELIEF` | Maps of Meaning | 进行中 · Ch2 已读 |
 | `TheMomTest` | The Mom Test | **已读完** · 有 `Summary.md` |
 | `TheEMythRevisited` | The E-Myth Revisited | **已读完** |
 | `12 rules for life an antidote to chaos` | 12 Rules for Life | pdf-only |
@@ -55,9 +56,9 @@ CoReader/
 
 ## Handoff
 
-- **加新书**：PDF 放进 `books/<新文件夹>/`，建好 `_meta/sections.json` 后再 `r`
+- **加新书**：PDF 放进 `books/<新文件夹>/`，建好 `_meta/sections.json` 与 `reading-profile.md` 后再 `r`
 - **切换当前书**：改 `.coreader.json` 的 `activeBook` 为 `books/` 下文件夹名
 - **读章节**：`r chapter N`（针对 activeBook）
-- **Maps of Meaning**：`r chapter 2` — Three Levels of Analysis
+- **Maps of Meaning**：`r chapter 3` — Apprenticeship and Enculturation
 - **The Mom Test**：全书读完（2026-06-14）；有 `Summary.md`、`KeyPoints.md`
 - **The E-Myth Revisited**：全书读完（2026-06-13）；有 `Summary.md`、`KeyPoints.md`

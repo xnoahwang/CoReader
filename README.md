@@ -7,7 +7,8 @@ An incremental **Chinese reading companion** for English books, built to work wi
 | Principle | Meaning |
 |-----------|---------|
 | **On demand** | Only the section you ask for (`r chapter 3`, `r preface`, …) is read and summarized |
-| **Chinese notes** | Chapter notes are written in Chinese, with English terms introduced once then explained |
+| **Chinese notes (default)** | `r <section>` → `03.Chapter-1.md` — Chinese study notes |
+| **English notes (optional)** | `r en <section>` → `03.Chapter-1-en.md` — parallel English notes, never overwrites Chinese |
 | **No fabrication** | Unread sections are not summarized or guessed |
 | **Persistent artifacts** | Notes, progress, seeds, and extracted raw text live in the repo as Markdown |
 
@@ -26,8 +27,10 @@ CoReader/
 └── books/
     └── <BookFolder>/
         ├── *.pdf               # Source PDF (local; see .gitignore)
-        ├── 01.Foreword.md      # Numbered chapter notes (agent output)
-        ├── Summary.md          # Full-book summary (on request)
+        ├── 01.Foreword.md      # Chapter notes, Chinese (default)
+        ├── 01.Foreword-en.md   # Chapter notes, English (r en)
+        ├── Summary.md          # Full-book summary (Chinese)
+        ├── Summary-en.md       # Full-book summary (r en summary)
         ├── KeyPoints.md        # Personal highlights (user-owned)
         └── _meta/
             ├── sections.json   # Section → PDF page mapping (required)
@@ -39,11 +42,11 @@ CoReader/
 
 ## Three layers of output
 
-| Layer | File | Who writes it | When |
-|-------|------|---------------|------|
-| Chapter notes | `01.*.md`, `02.*.md`, … | CoReader (agent) | Each `r <section>` |
-| Book summary | `Summary.md` | CoReader (agent) | When you ask for a full summary after finishing |
-| Highlights | `KeyPoints.md` | **You** | Your own “aha” excerpts; agent does not edit by default |
+| Layer | Chinese | English (`r en`) | Who writes | When |
+|-------|---------|------------------|------------|--------|
+| Chapter notes | `01.*.md` | `01.*-en.md` | CoReader | Each `r` / `r en <section>` |
+| Book summary | `Summary.md` | `Summary-en.md` | CoReader | On request after finishing |
+| Highlights | `KeyPoints.md` | — | **You** | Your own excerpts |
 
 ## Commands (in Cursor chat)
 
@@ -51,13 +54,19 @@ Use these with the CoReader skill enabled (or say `r`, `读`, `阅读`):
 
 | Command | Action |
 |---------|--------|
-| `r <section>` | Read and summarize the **active** book’s section |
-| `r status` | Show read / unread progress for the active book |
+| `r <section>` | Read and summarize section → **Chinese** note (`<note>.md`) |
+| `r en <section>` | Same → **English** note (`<note>-en.md`; does not overwrite Chinese) |
+| `r en summary` | Write `Summary-en.md` from read English (or Chinese) chapter notes |
+| `r status` | Read / unread progress (Chinese notes) |
+| `r en status` | Read / unread progress (English `-en` notes) |
 | `r list` | List sections for the active book |
 | `r books` | List all folders under `books/` (`ready` vs `pdf-only`) |
-| `r ask <question>` | Answer from read notes + source text (Chinese) |
+| `r ask <question>` | Answer from notes + source text (**Chinese**) |
+| `r en ask <question>` | Same, in **English** |
 
-Examples: `r foreword`, `r chapter 3`, `r ch7`, `r preface`
+Examples: `r foreword`, `r chapter 3`, `r en ch7`, `r en summary`
+
+**Naming:** if `sections.json` has `"note": "03.Chapter-1"`, English output is `03.Chapter-1-en.md`.
 
 Set the active book in `.coreader.json`:
 
@@ -138,10 +147,11 @@ Style reference for chapter notes: `books/TheEMythRevisited/15.Chapter-13.md`.
 
 ## Note style (short)
 
-- Chinese-first prose; avoid mixed English fragments in Chinese sentences  
-- First mention: `中文（English）`; later use Chinese  
-- Use `###` sections, tables, and blockquotes for contrasts and logic chains  
-- `_seeds.md` and `_cases.md` are append-only indexes across the whole book  
+**Chinese (`r`):** Chinese-first prose; first mention `中文（English）`; `###` sections and tables.
+
+**English (`r en`):** Full English sentences; same structure as Chinese notes; indexes in `_seeds-en.md` / `_cases-en.md`.
+
+See `.cursor/skills/coreader/output-template.md` for both.
 
 ## License & PDFs
 

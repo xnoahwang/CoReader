@@ -1,0 +1,7 @@
+- [chapter-1] **E-Myth** — Heroic entrepreneur myth vs. reality (status: defined)
+- [chapter-1] **Entrepreneurial Seizure** — “I can run this myself” (status: defined)
+- [chapter-1] **Fatal Assumption** — Technical work ≠ business (status: core)
+- [chapter-1] **Technician** — Craftsperson who becomes the job (status: Ch2 expands)
+- [chapter-1] **Four-stage curve** — Exhilaration → despair (status: defined)
+- [chapter-1] **Technician not the only problem** — Ch2 hook (status: open)
+- [chapter-1] **Sarah line** — All About Pies (status: active)

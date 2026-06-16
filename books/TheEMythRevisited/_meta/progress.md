@@ -26,6 +26,10 @@
 - [x] 22.Epilogue (2026-06-13)
 - [x] 23.Afterword (2026-06-13)
 
+## English completed
+
+- [x] 03.Chapter-1-en (2026-06-15)
+
 ## Next Steps
 
 - **全书读完** — 可回顾 `KeyPoints.md`、`Summary.md`、BDP 七步，或 `r` 下一本书

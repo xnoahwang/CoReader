@@ -1,0 +1,4 @@
+- [chapter-1] **Sarah / All About Pies** — 3 a.m. shop, hates pies, deep debt
+- [chapter-1] **Sarah's aunt** — "Baking pies is not about getting done"
+- [chapter-1] **Young woman baking pies** — three-line life vignette
+- [chapter-1] **Technician archetypes** — carpenter, barber, engineer, etc.

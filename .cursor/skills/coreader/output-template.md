@@ -130,17 +130,17 @@
 
 ## 文件位置
 
-| 用途 | 路径 |
-|------|------|
-| 编号笔记 | `books/<BookFolder>/01.Foreword.md` … |
-| 全书总结 | `books/<BookFolder>/Summary.md` — CoReader 按需；结构总览 |
-| 个人高光 | `books/<BookFolder>/KeyPoints.md` — **用户自有**；眼前一亮摘录，与分章笔记、Summary 分开 |
-| 章节映射 | `books/<BookFolder>/_meta/sections.json` |
-| 本书进度 | `books/<BookFolder>/_meta/progress.md` |
-| 种子清单 | `books/<BookFolder>/_meta/_seeds.md` |
-| 案例索引 | `books/<BookFolder>/_meta/_cases.md` |
-| 提取原文 | `books/<BookFolder>/_meta/_raw/<section-id>.txt` |
-| 书目总览 | 根目录 `progress.md` |
+| 用途 | 中文 | 英文（`r en`） |
+|------|------|----------------|
+| 编号笔记 | `books/<BookFolder>/03.Chapter-1.md` | `03.Chapter-1-en.md` |
+| 全书总结 | `Summary.md` | `Summary-en.md` |
+| 个人高光 | `KeyPoints.md`（用户自有） | — |
+| 种子清单 | `_meta/_seeds.md` | `_meta/_seeds-en.md` |
+| 案例索引 | `_meta/_cases.md` | `_meta/_cases-en.md` |
+| 章节映射 | `_meta/sections.json` | （共用） |
+| 本书进度 | `_meta/progress.md` | 同文件，`## English completed` |
+| 提取原文 | `_meta/_raw/<section-id>.txt` | （共用） |
+| 书目总览 | 根目录 `progress.md` | （共用） |
 
 ## _seeds.md / _cases.md 追加格式
 
@@ -162,3 +162,60 @@
 3. 空 `_seeds.md`、`_cases.md`、`progress.md`
 4. 更新 `.coreader.json` → `activeBook`
 5. 更新根目录 `progress.md` 书目表
+
+---
+
+## English notes (`r en`)
+
+For `r en <section>`, `r en summary`, `r en ask`. **Never overwrite** the Chinese file (`<note>.md`).
+
+### Filename
+
+| Source | Chinese | English |
+|--------|---------|---------|
+| `sections.json` → `"note": "03.Chapter-1"` | `03.Chapter-1.md` | `03.Chapter-1-en.md` |
+| Book summary | `Summary.md` | `Summary-en.md` |
+
+### Structure
+
+```markdown
+# <Chapter title in English>
+
+> Source: <English title> · pp.<start>-<end>
+> Read: <YYYY-MM-DD>
+
+## Summary
+## Seeds / threads
+## Case cards
+## Links to prior sections
+## Reading tips
+```
+
+Mirror the Chinese section layout (`###` headings, tables, blockquotes). Use **complete English sentences**; book terms may stay as in the source.
+
+### Style
+
+- Lead with 1–2 sentences on where this chapter sits in the book
+- Tables for contrasts (e.g. commodity vs product)
+- Blockquotes for key author lines (English as in the book)
+- **In plain terms** block for dense metaphors when helpful (parallel to 「用中文说清楚就是」)
+- **Easy to confuse** subsection when needed
+
+### `_seeds-en.md` / `_cases-en.md`
+
+Append only; do not overwrite the file.
+
+```markdown
+- [<section-id>] **<concept>** — <note> (status: …)
+- [<section-id>] **<case name>** — <who>: <what> → <point>
+```
+
+### `progress.md` (per book)
+
+Under `## English completed`:
+
+```markdown
+- [x] 03.Chapter-1-en (YYYY-MM-DD)
+```
+
+Chinese entries stay under `## Completed`.
